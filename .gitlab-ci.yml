@@ -1,0 +1,21 @@
+# image: docker:latest
+# services:
+#   - docker:dind
+image: jonaskello/docker-and-compose:1.12.1-1.8.0
+services:
+  - docker:1.12.1-dind
+
+before_script:
+  - docker info
+  - docker-compose version
+  - cp ./shared/config/.env-example .env
+  - sed -i -- "s/=false/=true/g" .env
+  - cat .env
+  - env | sort
+
+build:1.10:go:
+  variables:
+    GO_VERSION: "1.10"
+  script:
+    - docker-compose build go
+

@@ -1,4 +1,4 @@
-package yaml
+package v2
 
 import (
 	"fmt"

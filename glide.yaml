@@ -1,0 +1,4 @@
+package: github.com/sniperkit/snk.golang.yaml
+import:
+- package: github.com/json-iterator/go
+- package: gopkg.in/yaml.v2

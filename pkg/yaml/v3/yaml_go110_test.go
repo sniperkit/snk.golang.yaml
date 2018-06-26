@@ -1,6 +1,6 @@
 // +build go1.10
 
-package yaml
+package v3
 
 import (
 	"fmt"

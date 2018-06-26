@@ -6,6 +6,19 @@
 .project
 .settings/**
 
+.env
+
+# exclude vendor directory
+/vendor/
+/node_modules/
+/bower_components/
+
+node_modules
+bower_components
+
+.secrets.*
+secrets.*
+
 # Emacs save files
 *~
 
@@ -18,3 +31,104 @@ Session.vim
 
 # Go test binaries
 *.test
+
+# Win
+Thumbs.db
+ 
+# Mac
+.DS_Store
+ 
+# Vim
+*.sw?
+*~
+._*
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
+*.test
+*.prof
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# dev related files
+.staging
+.staging/
+.staging/*
+.staging/**
+
+# dist files
+dist
+dist/
+dist/*
+dist/**
+
+# local builds
+bin
+bin/
+bin/*
+bin/**
+
+# external packages folder
+vendor
+vendor/
+vendor/*
+vendor/**
+
+# custom
+.gtm/
+
+# mcc
+_bin/lib/mcc/*
+
+# dirs for build process
+_build/
+release
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
